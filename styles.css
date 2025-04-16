@@ -159,7 +159,7 @@ body {
 
 /* Sidebar Styles */
 .sidebar {
-  width: 72px;
+  width: 360px;
   background-color: #0f0f0f;
   padding: 12px 0;
   overflow-y: auto;
@@ -408,6 +408,10 @@ body {
 .input-thumbnail .info p {
   font-size: 14px;
   color: #aaa;
+}
+
+.title-input-thumbnail {
+  font-size: 16px;
 }
 
 /* Responsive Styles */
