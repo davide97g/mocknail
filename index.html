@@ -29,21 +29,17 @@
     </header>
 
     <div class="container">
+      <div class="sidebar">
+        <input type="text" class="video-title" placeholder="Video title" />
+        <input
+          id="fileInput"
+          type="file"
+          class="thumbnail"
+          accept=".png, .jpg, .jpeg"
+        />
+        <input type="text" class="channel-name" placeholder="Channel name" />
+      </div>
       <main class="content">
-        <div class="categories">
-          <button class="category-btn active">All</button>
-          <button class="category-btn">Gaming</button>
-          <button class="category-btn">Podcasts</button>
-          <button class="category-btn">Music</button>
-          <button class="category-btn">Live</button>
-          <button class="category-btn">Reaction videos</button>
-          <button class="category-btn">Lo-fi</button>
-          <button class="category-btn">Professional wrestling</button>
-          <button class="category-btn">Cricket</button>
-          <button class="category-btn">Sports leagues</button>
-          <button class="category-btn">Presentations</button>
-        </div>
-
         <div class="videos-grid">
           <!-- Row 1 -->
           <div class="video-card">
@@ -66,15 +62,11 @@
                   BetterHelp Online Therapy - Get Matched With Your Therapist
                 </h3>
                 <p class="channel-name">BetterHelp</p>
-                <p class="video-stats">Sponsored</p>
+                <p class="video-stats">567K views • 1 day ago</p>
               </div>
               <div class="video-menu">
                 <i class="fas fa-ellipsis-vertical"></i>
               </div>
-            </div>
-            <div class="video-actions">
-              <button class="action-btn">Watch</button>
-              <button class="action-btn secondary">Visit site</button>
             </div>
           </div>
 
@@ -218,41 +210,29 @@
             </div>
           </div>
         </div>
-
-        <!-- Random Preview Card Example -->
-        <div class="random-preview-card">
-          <img
-            src="https://via.placeholder.com/360x200"
-            alt="Preview Thumbnail"
-          />
-          <div class="info">
-            <h3>Random Preview Title</h3>
-            <p>Channel Name • 1.2M views • 2 days ago</p>
-          </div>
-        </div>
-
-        <!-- Input Thumbnail Example -->
-        <div class="input-thumbnail">
-          <img
-            src="https://via.placeholder.com/360x200"
-            alt="Input Thumbnail"
-          />
-          <div class="info">
-            <h3>Input Thumbnail Title</h3>
-            <p>Channel Name • 500K views • 1 week ago</p>
-          </div>
-        </div>
-
-        <div class="breaking-news">
-          <div class="section-header">
-            <h2>Breaking news</h2>
-            <button class="more-btn">
-              <i class="fas fa-ellipsis-vertical"></i>
-            </button>
-          </div>
-          <!-- Breaking news content would go here -->
-        </div>
       </main>
+      <div id="previewContainer" style="position: absolute; z-index: 1">
+        <img id="imagePreview" src="" alt="" />
+        <div>
+          <div id="sizeReq">
+            <i></i>
+          </div>
+          <div id="widthReq">
+            <i></i>
+          </div>
+          <div id="ratioReq">
+            <i></i>
+          </div>
+          <div id="fileSizeReq">
+            <i></i>
+          </div>
+          <div id="fileTypeReq">
+            <i></i>
+          </div>
+        </div>
+        <div id="validationResults"></div>
+        <div id="resultsList"></div>
+      </div>
     </div>
 
     <script src="script.js"></script>
