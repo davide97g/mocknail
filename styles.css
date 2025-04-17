@@ -44,6 +44,7 @@ body {
   color: white;
   font-size: 20px;
   font-weight: bold;
+  margin: 0 8px;
 }
 
 .logo i {
@@ -61,7 +62,9 @@ body {
 .search-container {
   display: flex;
   align-items: center;
-  flex: 0 1 728px;
+  flex: 1;
+  margin-left: 32px;
+  max-width: 800px;
 }
 
 .search-form {
@@ -245,6 +248,7 @@ body {
   width: 100%;
   border-radius: 12px;
   overflow: hidden;
+  max-height: 300px;
 }
 
 .thumbnail img {
