@@ -20,3 +20,7 @@ Vanilla Javascript, so no setup required, just open "index.html" on the browser 
 
 - open an issue
 - start working on an issue by forking the project and opening pull requests
+
+## Webhook with reputation scoring
+
+Test webhook reputation scoring trigger
